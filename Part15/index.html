@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 15</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+  <button id="btn">Buttton</button>
+  <p> <a href="http://google.com/" class="red" id="attribute"></a> This is example of attribute</p>
+
+  <script>
+
+    $(document).ready(function () {
+      //getting attribute value
+      // $('#btn').click(function(){
+      //   var value=$('#attribute').attr("href");
+      //   alert(value)
+
+      // })
+
+      // setting attribute
+      $('#btn').click(function () {
+        $('#attribute').attr("class", "black");
+
+      })
+
+      // setting multiple attribute
+
+      $('#btn').click(function () {
+        $('#attribute').attr({
+          "class": "black",
+          "href": "https://www.youtube.com/"
+        });
+
+      })
+    })
+  </script>
+</body>
+
+</html>

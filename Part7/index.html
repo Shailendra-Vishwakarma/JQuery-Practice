@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+       ></script>
+</head>
+
+<body>
+   <button id="hidebtn">Hide</button>
+   <button id="showbtn">Show</button>
+   <br><br>
+    <div id="boxdiv" style="background-color: red; height: 200px; width: 200px;"></div>
+   <script>
+    $(document).ready(function(){
+      $('#hidebtn').click(function(){
+         $('#boxdiv').hide(1000)
+      })
+      $('#showbtn').click(function(){
+         $('#boxdiv').show(1000)
+      })
+    })
+   </script>
+</body>
+
+</html>

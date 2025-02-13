@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 13</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+       ></script>
+</head>
+
+<body>
+   <button id="btn">Button</button>
+
+   <button id="sethtml">SetHTML</button>
+      <br><br>
+    <div id="boxdiv" style="background-color: red; height: 200px; width: 200px;">
+      <p>This p tag inside div <a href="#"> Link </a></p>
+    </div>
+    
+   <script>
+     
+ $(document).ready(function(){
+    // $('#btn').click(function(){
+    //   var text=$('#boxdiv').text()
+    //   alert(text)
+    // })
+
+    //for all data inside div along with html
+
+    $('#btn').click(function(){
+      var text=$('#boxdiv').html()
+      alert(text)
+    })
+
+    $('#sethtml').click(function(){
+      $('#boxdiv').html("<h1>Heading</h1>")
+    })
+     })
+   </script>
+</body>
+
+</html>

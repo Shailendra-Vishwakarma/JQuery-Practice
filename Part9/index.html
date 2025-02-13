@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 9</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+       ></script>
+</head>
+
+<body>
+   <button id="slideup">Slide Up</button>
+   <button id="slidedown">Slide Down</button>
+   <button id="togglebtn">Toggle</button>
+   <br><br>
+    <div id="boxdiv" style="background-color: red; height: 200px; width: 200px;"></div>
+   <script>
+    $(document).ready(function(){
+      $('#slideup').click(function(){
+         $('#boxdiv').slideUp(1000)
+      })
+      $('#slidedown').click(function(){
+         $('#boxdiv').slideDown(1000)
+      })
+      $('#togglebtn').click(function(){
+         $('#boxdiv').slideToggle(1000)
+      })
+    })
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 16</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- before -->
+  <ul id="list">
+    <!-- prepend -->
+    <li>Shailendra</li>
+    <li>Rahul</li>
+    <li>Prince</li>
+    <!-- append -->
+  </ul>
+  <!-- after -->
+  <script>
+
+    $(document).ready(function () {
+      $('#list').append("<li>Manish</li>")
+      $('#list').prepend("<li>Raj</li>")
+      $('#list').before("<p>Before Element</p>")
+      $('#list').after("<p>After Element</p>")
+
+      // remove the list
+      // $('#list').remove()
+      $('#list').empty()
+    })
+  </script>
+</body>
+
+</html>

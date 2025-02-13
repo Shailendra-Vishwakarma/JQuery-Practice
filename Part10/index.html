@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 10</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+       ></script>
+</head>
+
+<body>
+   <button id="animate">Animate</button>
+   <button id="stop">Stop</button>
+      <br><br>
+    <div id="boxdiv" style="background-color: red; height: 200px; width: 200px;"></div>
+   <script>
+    $(document).ready(function(){
+      $('#animate').click(function(){
+         $('#boxdiv').animate({
+            opacity:0.5,
+            height:"500px",
+            width:"100px"
+         },5000)
+      })
+      $('#stop').click(function(){
+         $('#boxdiv').stop()
+      })
+    })
+   </script>
+</body>
+
+</html>

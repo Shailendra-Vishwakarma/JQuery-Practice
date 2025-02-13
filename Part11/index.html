@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 11</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+       ></script>
+</head>
+
+<body>
+   <button id="btn">Button</button>
+      <br><br>
+    <div id="boxdiv" style="background-color: red; height: 200px; width: 200px;"></div>
+   <script>
+     
+ $(document).ready(function(){
+
+    //without callback function alert will show just after div hidding start
+   //    $('#btn').click(function(){
+   //       $('#boxdiv').hide(3000);
+   //       alert("Div is hidden Now ! ");
+   //    })
+
+   //with callback function aler will show after hidding div
+      $('#btn').click(function(){
+         $('#boxdiv').hide(3000, function(){
+            alert("Div is hidden Now ! ");
+         });
+         
+      })
+    })
+   </script>
+</body>
+
+</html>

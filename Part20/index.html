@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 20</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+</head>
+<body>
+
+<p id="pra">This is p Tag</p>
+<button id="btn">Change</button>
+
+  <script>
+    $(document).ready(function () {
+      $.noConflict()
+      jQuery('#btn').click(function(){
+        jQuery('#pra').text("Text Changed ! ")
+      })
+
+      //or
+
+      // var JQ=$.noConflict()
+      // JQ('#btn').click(function(){
+      //   JQ('#pra').text("Text Changed !")
+      // })
+
+    });
+  </script>
+</body>
+
+</html>
